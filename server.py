@@ -38,7 +38,7 @@ class MeuServidor(BaseHTTPRequestHandler):
         self.wfile.write(resposta.encode("utf-8"))
 
 if __name__ == "__main__":
-    porta = 8000
+    porta = 5000 #Padrão replit
     servidor = HTTPServer(("0.0.0.0", porta), MeuServidor)
     print(f"🚀 Servidor rodando em http://localhost:{porta}")
     print("👉 Exemplo: http://localhost:8000/?ceps=01001000,30140071")
